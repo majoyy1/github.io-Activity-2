@@ -6,11 +6,24 @@
   <style>
     body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background: url('https://static.wikia.nocookie.net/hunterxhunter/images/0/05/Hunter_Exam_Poster.png/revision/latest?cb=20230608011215;
-      background-size: cover;
       margin: 0;
       padding: 0;
       color: #ff69b4;
+      position: relative;
+      background: url('https://static.wikia.nocookie.net/hunterxhunter/images/0/05/Hunter_Exam_Poster.png/revision/latest?cb=20230608011215') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Overlay effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 182, 193, 0.3); /* pink overlay */
+      z-index: -1;
     }
 
     h1 {
@@ -22,28 +35,29 @@
       font-size: 2.5em;
       text-shadow: 2px 2px 4px #ff1493;
     }
-      
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .gallery img {
       width: 100%;
-      height: 250px;
+      height: 280px;
       object-fit: cover;
       border: 5px solid #ffb6c1;
       border-radius: 15px;
       background-color: white;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     }
 
     .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 16px rgba(255, 105, 180, 0.8);
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.8);
       border-color: #ff69b4;
     }
 
@@ -53,6 +67,7 @@
       background-color: rgba(255, 182, 193, 0.9);
       color: white;
       margin-top: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
