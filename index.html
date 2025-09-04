@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunter x Hunter Collage</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: sans-serif;
-        }
+  <meta charset="UTF-8">
+  <title>Sanrio Characters Gallery</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: url('https://i.pinimg.com/736x/96/60/72/966072b8dc542e5d9cdae25403544aec.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #ff69b4;
+    }
 
-        .collage {
-            display: grid;
-            grid-template-columns: repeat(4, 150px);
-            grid-auto-rows: 150px;
-            gap: 10px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
+    h1 {
+      text-align: center;
+      background-color: rgba(255, 182, 193, 0.9);
+      color: #fff;
+      padding: 15px;
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px #ff1493;
+    }
+      
 
-        .compartment {
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
 
-        .compartment:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border: 5px solid #ffb6c1;
+      border-radius: 15px;
+      background-color: white;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(255, 105, 180, 0.8);
+      border-color: #ff69b4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(255, 182, 193, 0.9);
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="collage">
-        <div class="compartment" style="background-image: url('https://share.google/images/725RSLxSCSlMUa7lr');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/2.jpg');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/3.jpg');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/4.jpg');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/5.jpg');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/6.jpg');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/7.jpg');"></div>
-        <div class="compartment" style="background-image: url('https://i.imgur.com/8.jpg');"></div>
-    </div>
+  <h1>Sanrio Characters Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://cdn.wallpapersafari.com/18/92/bW64HL.jpg" alt="Hello Kitty">
+    <img src="https://pbs.twimg.com/media/FqoeB41WwAEKBGo?format=png&name=4096x4096" alt="Cinnamoroll">
+    <img src="https://admin.sportshackster.com/WallPaperMedia/PlayerWallPaperImage/melody-5_63861305108539.7.jpg" alt="My Melody">
+    <img src="https://pbs.twimg.com/media/Fe4l6kPWAAAZhlb?format=jpg&name=4096x4096" alt="Kuromi">
+    <img src="https://m.gettywallpapers.com/wp-content/uploads/2023/09/Pompompurin-Wallpaper-576x1024.jpg" alt="Pompompurin">
+    <img src="https://i.pinimg.com/736x/c6/44/05/c64405e847500cca7d38f3b4305aead7.jpg" alt="Badtz-Maru">
+    <img src="https://pbs.twimg.com/media/F0x_S7DWIAAa24T?format=png&name=4096x4096" alt="Keroppi">
+  </div>
+
+  <footer>
+    © 2025 Sanrio Characters Gallery. Made with 💖
+  </footer>
 </body>
 </html>
